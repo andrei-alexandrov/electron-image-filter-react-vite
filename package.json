@@ -1,0 +1,32 @@
+{
+  "name": "electron-image-filter",
+  "private": true,
+  "version": "0.0.0",
+  "main": "./out/main/main.js",
+  "scripts": {
+    "dev": "electron-vite dev -w",
+    "build": "electron-vite build",
+    "preview": "electron-vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.15.11",
+    "@mui/material": "^5.15.11",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-image-filter": "^0.1.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.56",
+    "@types/react-dom": "^18.2.19",
+    "@vitejs/plugin-react": "^4.2.1",
+    "electron": "^29.1.0",
+    "electron-vite": "^2.0.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "vite": "^5.1.4"
+  }
+}
