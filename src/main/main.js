@@ -25,7 +25,7 @@ function createWindow() {
 
   mainWindow.loadURL("http://localhost:5173");
   mainWindow.on("closed", () => (mainWindow = null));
-  mainWindow.webContents.openDevTools();
+  // mainWindow.webContents.openDevTools();
 }
 
 app.whenReady().then(() => {

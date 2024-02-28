@@ -1,6 +1,8 @@
 import Button from "@mui/material/Button";
 import LandscapeIcon from "@mui/icons-material/Landscape";
 import FileOpenIcon from "@mui/icons-material/FileOpen";
+import "./index.css";
+import "./App.css";
 import {
   AppBar,
   Box,
@@ -16,13 +18,13 @@ import { useState } from "react";
 function App() {
   const [imageFilter, setImageFilter] = useState(undefined);
   const [imageUrl, setImageUrl] = useState(
-    "https://source.unsplash.com/RZrIJ8C0860"
+    "https://scitechdaily.com/images/Black-Hole-Event-Horizon-Artistic-Illustration.jpg"
   );
 
- async function onOpenFileClick() {
-  const filePath = await window.electronAPI.openFile();
-  setImageUrl(filePath);
-};
+  async function onOpenFileClick() {
+    const filePath = await window.electronAPI.openFile();
+    setImageUrl(filePath);
+  }
 
   return (
     <>
@@ -36,7 +38,7 @@ function App() {
           },
         }}
       >
-        <AppBar position="static">
+        <AppBar position="static" className="navbar-container">
           <Container>
             <Toolbar>
               <LandscapeIcon sx={{ mr: 1 }} />

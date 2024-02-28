@@ -16,11 +16,11 @@ function createWindow() {
     webPreferences: {
       preload: path.join(__dirname, "../preload/preload.js"),
       webSecurity: false
+      //(TO DO) Not good, find a workaround with webSecurity set to true
     }
   });
   mainWindow.loadURL("http://localhost:5173");
   mainWindow.on("closed", () => mainWindow = null);
-  mainWindow.webContents.openDevTools();
 }
 app.whenReady().then(() => {
   ipcMain.handle("dialog:openFile", handleFileOpen);
