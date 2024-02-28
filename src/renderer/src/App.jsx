@@ -19,9 +19,10 @@ function App() {
     "https://source.unsplash.com/RZrIJ8C0860"
   );
 
-  async function onOpenFileClick() {
-    // TODO
-  }
+ async function onOpenFileClick() {
+  const filePath = await window.electronAPI.openFile();
+  setImageUrl(filePath);
+};
 
   return (
     <>
